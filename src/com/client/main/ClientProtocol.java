@@ -15,8 +15,7 @@ public class ClientProtocol {
 	final int BUFFER = 8192;
 
 	private Socket socket = null;
-	String host = "192.168.1.65";
-	// private String host = "localhost";
+	private String host = "localhost";
 	private InputStream is = null;
 	private FileOutputStream fos = null;
 	private BufferedOutputStream bos = null;
@@ -32,7 +31,7 @@ public class ClientProtocol {
 
 			String filename = dis.readUTF(); // name given from the server
 
-			fos = new FileOutputStream("/home/jonathanmcmillon/Desktop"
+			fos = new FileOutputStream("/home/jmcmillon/Documents/"
 					+ filename); // download location
 			bos = new BufferedOutputStream(fos);
 
@@ -63,6 +62,7 @@ public class ClientProtocol {
 				fileSize -= count;
 				progressBar.update((int) Math.round(lengthPerPercent * readLength));
 			}
+			progressBar.update((int) Math.round(lengthPerPercent * readLength));
 
 		} catch (IOException ex) {
 			System.out.println("Can't connect to the server");
