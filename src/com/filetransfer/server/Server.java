@@ -1,4 +1,4 @@
-package com.server.main;
+package com.filetransfer.server;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;

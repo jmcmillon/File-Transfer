@@ -1,4 +1,4 @@
-package com.client.main;
+package com.filetransfer.client;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
 
-import com.client.progressbar.FileProgressBar;
+import com.filetransfer.progressbar.FileProgressBar;
 
 public class ClientProtocol {
 

@@ -1,4 +1,4 @@
-package com.client.main;
+package com.filetransfer.client;
 
 import java.io.IOException;
 

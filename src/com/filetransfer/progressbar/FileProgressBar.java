@@ -1,4 +1,4 @@
-package com.client.progressbar;
+package com.filetransfer.progressbar;
 
 import java.awt.Dimension;
 
